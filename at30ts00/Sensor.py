@@ -1,12 +1,12 @@
-# at30ts00.py - driver for the I2C based Atmel at30ts00 temperature sensor
+# sensor.py - driver class for the I2C based Atmel at30ts00 temperature sensor
 
 """This module allows driving the I2C temp sensor"""
 import smbus
 
 
-class at30ts00(object):
-    """at30ts00([bus]) -> at30ts00
-    Return a new at30ts00 object that is connected to the
+class Sensor(object):
+    """Sensor([bus]) -> Sensor
+    Return a new Sensor object that is connected to the
     specified I2C device interface.
     """
     REG_ADDR_CAPABILITY = 0x00
